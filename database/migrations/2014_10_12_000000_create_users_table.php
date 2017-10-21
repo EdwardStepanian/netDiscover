@@ -23,13 +23,13 @@ class CreateUsersTable extends Migration
             $table->string('durationstart');
             $table->string('durationend');
             $table->string('cardnumber');
-            $table->string('cardexpire');
             $table->string('street');
             $table->string('country');
             $table->string('phone');
-            $table->string('additionalphone');
+            $table->string('phonesecond');
             $table->rememberToken();
             $table->timestamps();
+
         });
     }
 

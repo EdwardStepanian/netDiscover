@@ -49,8 +49,17 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
+            'lastname' => 'string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'passport' => 'required|string|max:255',
+            'durationstart' => 'required|string|max:255',
+            'durationend' => 'required|string|max:255',
+            'cardnumber' => 'required|string|max:255',
+            'street' => 'required|string|max:255',
+            'country' => 'required|string|max:255',
+            'phone' => 'required|string|max:255',
+            'phonesecond' => 'required|string|max:255',
         ]);
     }
 
@@ -62,12 +71,19 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        echo('<pre>');
-        print_r($data);
         return User::create([
             'name' => $data['name'],
+            'lastname' => $data['lastname'],
             'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+            'password' => $data['password'],
+            'passport' => $data['passport'],
+            'durationstart' => $data['durationstart'],
+            'durationend' => $data['durationend'],
+            'cardnumber' => $data['cardnumber'],
+            'street' => $data['street'],
+            'country' => $data['country'],
+            'phone' => $data['phone'],
+            'phonesecond' => $data['phonesecond'],
         ]);
     }
 }

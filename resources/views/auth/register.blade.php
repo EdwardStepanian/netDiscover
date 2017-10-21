@@ -18,7 +18,7 @@
                                 <label for="name" class="col-xs-8 col-xs-offset-2">Name*</label>
 
                                 <div class="col-xs-5 col-xs-offset-2">
-                                    <input id="name" type="text" class="form-control" placeholder="Name" name="name" value="{{ old('name') }}" required autofocus>
+                                    <input id="name" type="text" class="form-control" placeholder="Name" name="name" value="{{ old('name') }}"  autofocus>
 
                                     @if ($errors->has('name'))
                                         <span class="help-block">
@@ -28,7 +28,7 @@
                                 </div>
 
                                 <div class="col-xs-5">
-                                    <input id="lastname" type="text" class="form-control" placeholder="Lastname" name="lastname" value="{{ old('lastname') }}" required>
+                                    <input id="lastname" type="text" class="form-control" placeholder="Lastname" name="lastname" value="{{ old('lastname') }}" >
 
                                     @if ($errors->has('lastname'))
                                         <span class="help-block">
@@ -42,7 +42,7 @@
                                 <label for="email" class="col-md-8 col-xs-offset-2">E-Mail Address*</label>
 
                                 <div class="col-xs-10 col-xs-offset-2">
-                                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" >
 
                                     @if ($errors->has('email'))
                                         <span class="help-block">
@@ -56,7 +56,7 @@
                                 <label for="password" class="col-md-8 col-xs-offset-2">Password*</label>
 
                                 <div class="col-xs-10 col-xs-offset-2">
-                                    <input id="password" type="password" class="form-control" name="password" required>
+                                    <input id="password" type="password" class="form-control" name="password" >
 
                                     @if ($errors->has('password'))
                                         <span class="help-block">
@@ -70,7 +70,7 @@
                                 <label for="password-confirm" class="col-md-8 col-xs-offset-2">Confirm Password*</label>
 
                                 <div class="col-xs-10 col-xs-offset-2">
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" >
                                 </div>
                             </div>
 
@@ -79,7 +79,7 @@
                                 <label for="passport" class="col-md-8 col-xs-offset-2">Passport Number*</label>
 
                                 <div class="col-xs-10 col-xs-offset-2">
-                                    <input id="passport" type="text" class="form-control" name="passport" required>
+                                    <input id="passport" type="text" class="form-control" name="passport" >
 
                                     @if ($errors->has('passport'))
                                         <span class="help-block">
@@ -94,7 +94,7 @@
                                 <label for="durationstart" class="col-xs-8 col-xs-offset-2">Duration*</label>
 
                                 <div class="col-xs-5 col-xs-offset-2">
-                                    <input id="durationstart" type="date" class="form-control" placeholder="Start" name="durationstart" required>
+                                    <input id="durationstart" type="date" class="form-control" placeholder="Start" name="durationstart" >
 
                                     @if ($errors->has('durationstart'))
                                         <span class="help-block">
@@ -104,7 +104,7 @@
                                 </div>
 
                                 <div class="col-xs-5">
-                                    <input id="durationend" type="date" class="form-control" placeholder="End" name="durationend" required>
+                                    <input id="durationend" type="date" class="form-control" placeholder="End" name="durationend" >
 
                                     @if ($errors->has('durationend'))
                                         <span class="help-block">
@@ -124,7 +124,7 @@
                                 <label for="cardnumber" class="col-md-8">Card Number*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="cardnumber" type="text" class="form-control" name="cardnumber" required>
+                                    <input id="cardnumber" type="text" class="form-control" name="cardnumber" >
 
                                     @if ($errors->has('cardnumber'))
                                         <span class="help-block">
@@ -153,7 +153,7 @@
                                 <label for="street" class="col-md-8">Street*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="street" type="text" class="form-control" name="street" required>
+                                    <input id="street" type="text" class="form-control" name="street" >
 
                                     @if ($errors->has('street'))
                                         <span class="help-block">
@@ -168,7 +168,7 @@
                                 <label for="country" class="col-md-8">Country*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="country" type="text" class="form-control" name="country" required>
+                                    <input id="country" type="text" class="form-control" name="country" >
 
                                     @if ($errors->has('country'))
                                         <span class="help-block">
@@ -183,7 +183,7 @@
                                 <label for="phone" class="col-md-8">Phone number*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="phone" type="text" class="form-control" name="phone" required>
+                                    <input id="phone" type="text" class="form-control" name="phone" >
 
                                     @if ($errors->has('phone'))
                                         <span class="help-block">
@@ -198,7 +198,7 @@
                                 <label for="phonesecond" class="col-md-8">Additional Phone number*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="phonesecond" type="text" class="form-control" name="phonesecond" required>
+                                    <input id="phonesecond" type="text" class="form-control" name="phonesecond" >
 
                                     @if ($errors->has('phonesecond'))
                                         <span class="help-block">
