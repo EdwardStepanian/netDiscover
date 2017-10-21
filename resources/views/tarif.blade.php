@@ -50,7 +50,7 @@
                                 <h4 class="modal-title">Generate tarif</h4>
                             </div>
                             <div class="modal-body">
-                                <label for="typeOfCom">Please select which type of communication qo strov</label>
+                                <label for="typeOfCom">Please select which type of communication type</label>
                                 <select data-placeholder="Choose a country..." multiple class="chosen-select"></select>
                             </div>
                             <div class="modal-footer">

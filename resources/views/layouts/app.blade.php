@@ -42,7 +42,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="http://localhost:8000/heatmap">HeatMap</a></li>
                             <li><a href="http://localhost:8000/account">Account</a></li>
-                            <li><a href="http://localhost:8000/tariffs">Tariffs</a></li>
+                            <li><a href="http://localhost:8000/tarif">Tariffs</a></li>
                             <li><a href="http://localhost:8000/payment">Payment</a></li>
                         </ul>
                         <li class="dropdown pull-right signOutDropdown">
