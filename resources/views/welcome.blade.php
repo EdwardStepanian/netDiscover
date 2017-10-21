@@ -105,8 +105,8 @@
         <h2 class="text-center">Coverage Map</h2>
     </div>
 
-    <div class="mapCover" id="map-canvas">
-
+    <div class="mapCover">
+        <img src="{{asset('images/beMap.png')}}" alt="" style="width: 100%; height: auto">
     </div>
 
 </div>
