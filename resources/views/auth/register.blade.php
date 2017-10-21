@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<link rel="icon" href="{{asset('images/fav.png')}}">
 
 @section('content')
     <div class="container">
