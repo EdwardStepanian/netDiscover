@@ -57,7 +57,7 @@ window.onload = function () {
             return [currentPlace, drowMarker(coordinates)];
         }).then((coordinate) => {
             heatmap = new HeatmapOverlay(map, {
-                "radius": 0.05,
+                "radius": 0.0035,
                 "maxOpacity": 1,
                 "scaleRadius": true,
                 "useLocalExtrema": true,
