@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $user = new User;
+        if(empty($user->tarif)){
+            return redirect('/tarif');
+        }else{
+            return view('home');
+        }
+    }
+    public function showTarif(){
+        return view('tarif');
     }
 }
