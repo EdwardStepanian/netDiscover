@@ -36,42 +36,43 @@
                 </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ route('heatmap') }}">HeatMap</a></li>
-                </ul>
+            <div id="app-navbar-collapse" class="collapse navbar-collapse">
+                @if (Route::has('login'))
+                    @auth
+                        <ul class="nav navbar-nav">
+                            <li><a href="http://localhost:8000/heatmap">HeatMap</a></li>
+                            <li><a href="http://localhost:8000/account">Account</a></li>
+                            <li><a href="http://localhost:8000/tariffs">Tariffs</a></li>
+                            <li><a href="http://localhost:8000/payment">Payment</a></li>
+                        </ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
 
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    @guest
-                        <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
+                                        Logout
+                                    </a>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                              style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                            @endguest
-                </ul>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                          style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        @else
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="http://localhost:8000/login">Login</a></li>
+                                <li><a href="http://localhost:8000/register">Register</a></li>
+                            </ul>
+                            @endauth
+                        @endif
             </div>
         </div>
     </nav>

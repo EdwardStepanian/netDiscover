@@ -41,3 +41,107 @@
 .logoImg {
     width: 190px;
 }
+
+.sliderContainer {
+    width: 100%;
+    height: 95vh;
+}
+.welcomeNavbar {
+    margin-bottom: 0;
+}
+
+.owl-stage-outer {
+    height: 95vh;
+}
+.owl-stage-outer img {
+    height: 110vh;
+}
+.owl-wrapper {
+    position: relative;
+}
+.owl-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: #fff !important;
+}
+.owl-img {
+    width: 100%;
+}
+.owl-text-overlay, .owl-text-overlay-sec, .owl-text-overlay-third {
+    position: absolute;
+    text-align: right;
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    padding-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 15px 50px 30px 5px;
+}
+.owl-text-overlay-sec {
+    text-align: center;
+    width: 100%;
+    top: 25%;
+}
+.owl-text-overlay-third {
+    text-align: left;
+    padding-left: 2%;
+    width: 100%;
+    top: 60%;
+}
+h2.owl-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 12px rgba(122, 124, 129, 0.68);
+}
+h2.owl-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 12px rgba(122, 124, 129, 0.68);
+}
+p.owl-caption {
+    font-size: 18px;
+    line-height: 24px;
+}
+.owl-theme .owl-controls .owl-page span:active {
+    background: #fff !important;
+}
+/* hide previous and next */
+
+.owl-buttons {
+    visibility: hidden;
+    display: none;
+}
+
+.sectionContainer {
+    height: 50px;
+    margin: 30px;
+}
+
+.startNow {
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+}
+.startNow:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.mapCover {
+    height: 800px;
+    background-color: white;
+}

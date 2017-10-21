@@ -79,7 +79,7 @@
                                 <label for="passport" class="col-md-8 col-xs-offset-2">Passport Number*</label>
 
                                 <div class="col-xs-10 col-xs-offset-2">
-                                    <input id="passport" type="password" class="form-control" name="passport" required>
+                                    <input id="passport" type="text" class="form-control" name="passport" required>
 
                                     @if ($errors->has('passport'))
                                         <span class="help-block">
