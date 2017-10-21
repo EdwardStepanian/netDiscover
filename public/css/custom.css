@@ -153,3 +153,47 @@ p.owl-caption {
 .signOutDropdown .dropdown-menu{
     top: 35px;
 }
+.stats-tabs.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+.stats-tabs.nav-tabs {
+    border-bottom: 0 !important;
+}
+.stats-tabs.nav-tabs > li a:hover {
+    background: transparent;
+    border-color: transparent;
+}
+.stats-tabs.nav-tabs > li > a:hover,
+.stats-tabs.nav-tabs > li > a:focus {
+    background-color: #e6e6e6;
+    color: #676a6c;
+}
+.stats-tabs.nav-tabs > li.active > a,
+.stats-tabs.nav-tabs > li.active > a:hover,
+.stats-tabs.nav-tabs > li.active > a:focus {
+    border: 1px solid #e7eaec;
+    border-bottom-color: #fff;
+    z-index: 2;
+}
+.stats-tabs.nav-tabs > li.active > a,
+.stats-tabs.nav-tabs > li.active > a:hover,
+.stats-tabs.nav-tabs > li.active > a:focus {
+    background-color: #fff;
+}
+.stats-tab-pane {
+    margin-bottom: 25px;
+}
+.stats-tab-pane.chart-container,
+.stats-tab-pane.chart-container .panel-body {
+    height: 300px;
+}
+.stats-tab-pane .panel-body {
+    background: #fff;
+    border: 1px solid #e7eaec;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    height: 100%;
+}
+

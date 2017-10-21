@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/heatmap', 'MapController@show')->name('heatmap');
+Route::get('/tarif', 'HomeController@showTarif')->name('tarif');

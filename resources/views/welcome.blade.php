@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{asset('images/fav.png')}}">
 
     <title>NetDiscover</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="icon" href="http://localhost:8000images/fav.png">
     <!-- Styles -->
     <link href="{{asset('css/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/owl.theme.default.min.css')}}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/map.css') }}" rel="stylesheet">
+
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
@@ -101,7 +103,7 @@
         <h2 class="text-center">Coverage Map</h2>
     </div>
 
-    <div class="mapCover">
+    <div class="mapCover" id="map-canvas">
 
     </div>
 
@@ -112,7 +114,13 @@
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.js') }}"></script>
 {{--<script src="{{ asset('js/custom.js') }}"></script>--}}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB72qv_GuZVo7oBUUOGc_APkbRGGA4iHlc&sensor=false"
+        async defer></script>
+<script src="{{ asset('js/buildHeatmap.js') }}"></script>
+<script src="{{ asset('js/gmaps-heatmap.js') }}"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.3/jquery.autocomplete.min.js"> </script>
+<script src="{{ asset('js/heatMap.js') }}"></script>
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({

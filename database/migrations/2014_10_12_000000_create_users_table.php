@@ -26,7 +26,9 @@ class CreateUsersTable extends Migration
             $table->string('street')->nullable();
             $table->string('country')->nullable();
             $table->string('phone')->nullable();
-            $table->string('phonesecond')->nullable();
+            $table->string('tarif')->nullable();
+            $table->string('generatedPhoneNumber')->nullable();
+            $table->string('generatedPhoneId')->nullable();
             $table->rememberToken();
             $table->timestamps();
 
