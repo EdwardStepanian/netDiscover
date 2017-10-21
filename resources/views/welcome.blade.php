@@ -9,7 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+    <link rel="icon" href="http://localhost:8000images/fav.png">
     <!-- Styles -->
     <link href="{{asset('css/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/owl.theme.default.min.css')}}" rel="stylesheet">
@@ -63,7 +63,7 @@
                     @else
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="http://localhost:8000/login">Login</a></li>
-                            <li><a href="http://localhost:8000/register">Register</a></li>
+                            <li><a href="http://localhost:8000/register">Sign Up</a></li>
                         </ul>
                         @endauth
                     @endif

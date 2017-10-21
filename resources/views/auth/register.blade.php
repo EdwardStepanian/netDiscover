@@ -90,29 +90,6 @@
                             </div>
 
                             <!-- Duration -->
-                            <div class="form-group{{ $errors->has('duration') ? ' has-error' : '' }}">
-                                <label for="durationstart" class="col-xs-8 col-xs-offset-2">Duration*</label>
-
-                                <div class="col-xs-5 col-xs-offset-2">
-                                    <input id="durationstart" type="date" class="form-control" placeholder="Start" name="durationstart" >
-
-                                    @if ($errors->has('durationstart'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('durationstart') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-
-                                <div class="col-xs-5">
-                                    <input id="durationend" type="date" class="form-control" placeholder="End" name="durationend" >
-
-                                    @if ($errors->has('durationend'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('durationend') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
                         </div>
 
 
@@ -194,19 +171,7 @@
                             </div>
 
                             <!-- Additional Phone number -->
-                            <div class="form-group{{ $errors->has('phonesecond') ? ' has-error' : '' }}">
-                                <label for="phonesecond" class="col-md-8">Additional Phone number*</label>
 
-                                <div class="col-xs-10">
-                                    <input id="phonesecond" type="text" class="form-control" name="phonesecond" >
-
-                                    @if ($errors->has('phonesecond'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('phonesecond') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
 
 
 
