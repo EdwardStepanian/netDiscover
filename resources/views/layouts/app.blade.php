@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
 <div id="app">
@@ -30,7 +32,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    NetDiscover
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo.png" class="logoImg">
                 </a>
             </div>
 
@@ -80,6 +82,7 @@
 <!-- Scripts -->
 
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 
 </body>
 </html>
