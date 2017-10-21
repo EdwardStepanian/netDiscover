@@ -97,21 +97,6 @@
 
                         <div class="col-xs-6">
 
-                            <!--Card number-->
-                            <div class="form-group{{ $errors->has('cardnumber') ? ' has-error' : '' }}">
-                                <label for="cardnumber" class="col-md-8">Card Number*</label>
-
-                                <div class="col-xs-10">
-                                    <input id="cardnumber" type="text" class="form-control" name="cardnumber" >
-
-                                    @if ($errors->has('cardnumber'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('cardnumber') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
 
                             <div class="form-group col-xs-10 cardContainer">
                                 <label for="card-element">
@@ -131,11 +116,26 @@
                                 <label for="street" class="col-md-8">Street*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="street" type="text" class="form-control" name="street" >
+                                    <input id="street" type="text" class="form-control" name="street" value="{{ old('street') }}">
 
                                     @if ($errors->has('street'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('street') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <!--Card number-->
+                            <div class="form-group{{ $errors->has('cardnumber') ? ' has-error' : '' }}">
+                                <label for="cardnumber" class="col-md-8">City*</label>
+
+                                <div class="col-xs-10">
+                                    <input id="cardnumber" type="text" class="form-control" name="cardnumber" value="{{ old('cardnumber') }}">
+
+                                    @if ($errors->has('cardnumber'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('cardnumber') }}</strong>
                                     </span>
                                     @endif
                                 </div>
@@ -146,7 +146,7 @@
                                 <label for="country" class="col-md-8">Country*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="country" type="text" class="form-control" name="country" >
+                                    <input id="country" type="text" class="form-control" name="country" value="{{ old('country') }}">
 
                                     @if ($errors->has('country'))
                                         <span class="help-block">
@@ -161,7 +161,7 @@
                                 <label for="phone" class="col-md-8">Phone number*</label>
 
                                 <div class="col-xs-10">
-                                    <input id="phone" type="text" class="form-control" name="phone" >
+                                    <input id="phone" type="text" class="form-control" name="phone" value="{{ old('phone') }}">
 
                                     @if ($errors->has('phone'))
                                         <span class="help-block">
