@@ -39,7 +39,7 @@
                         <li><a href="http://localhost:8000/tariffs">Tariffs</a></li>
                         <li><a href="http://localhost:8000/payment">Payment</a></li>
                     </ul>
-                    <li class="dropdown">
+                    <li class="dropdown pull-right signOutDropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-expanded="false">
                             {{ Auth::user()->name }} <span class="caret"></span>
