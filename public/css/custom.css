@@ -145,3 +145,11 @@ p.owl-caption {
     height: 800px;
     background-color: white;
 }
+
+.signOutDropdown {
+    top: 10px;
+    list-style-type: none;
+}
+.signOutDropdown .dropdown-menu{
+    top: 35px;
+}
