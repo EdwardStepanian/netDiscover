@@ -16,6 +16,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/map.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/chosen.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 
     <script src="https://js.stripe.com/v3/"></script>
 </head>
@@ -110,7 +112,6 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.js') }}"></script>
 {{--<script src="{{ asset('js/custom.js') }}"></script>--}}

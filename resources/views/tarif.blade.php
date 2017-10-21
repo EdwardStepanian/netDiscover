@@ -1,14 +1,15 @@
 @extends('layouts.app')
 <style>
-    button:hover{
-        color: #fff !important;
-        background-color: #5cb85c !important;
-        border-color: #4cae4c !important;
-    }
+
     a{
         font-weight: bold;
     }
 </style>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="{{asset('js/choosen.js')}}"></script>
+<script>
+    jQuery(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
+</script>
 @section('content')
     <div class="container">
     <div class="row">
@@ -50,7 +51,7 @@
                             </div>
                             <div class="modal-body">
                                 <label for="typeOfCom">Please select which type of communication qo strov</label>
-
+                                <select data-placeholder="Choose a country..." multiple class="chosen-select"></select>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
