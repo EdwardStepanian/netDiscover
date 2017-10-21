@@ -7,9 +7,7 @@
 </style>
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script src="{{asset('js/choosen.js')}}"></script>
-<script>
-    jQuery(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
-</script>
+
 @section('content')
     <div class="container">
     <div class="row">
@@ -51,15 +49,31 @@
                             </div>
                             <div class="modal-body">
                                 <label for="typeOfCom">Please select which type of communication type</label>
-                                <select data-placeholder="Choose a country..." multiple class="chosen-select"></select>
+                                <hr>
+                                {{--<h5><b>Service Package</b><br>&nbsp;- Unlimited calls to Beeline mobile network of RA<br>&nbsp;- 150 SMS to all mobile networks of RA and NKR<br>&nbsp;- Mobile Internet<br>&nbsp;- Fixed Internet</h5>--}}
+                                <select class="selectpicker" data-width="100%" multiple title="Choose one of the following...">
+                                    <option>Unlimited calls to Beeline </option>
+                                    <option>150 SMS to all mobile networks of RA and NKR</option>
+                                    <option>Mobile Internet</option>
+                                    <option> Modern TV</option>
+                                </select>
+                                <br>
+                                <br>
+                                <br>
+                                <a target="_blank" href="https://static.beeline.am/upload/images/Documents/armentel/2017/Information_fix_2_2017_arm.pdf">
+                                    Privacy Policy – Privacy & Terms
+                                </a>
                             </div>
                             <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" style="text-align: left">7 990 AMD/month</button>
+                                <a href="/accaunt" type="button" id='showSpinner' class="btn btn-success" >Choose this</a>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
 
                     </div>
                 </div>
+
                 <div class="tab-content">
                     <div id="table-tab0" class="tab-pane stats-tab-pane active">
                         <div class="panel-body">
@@ -384,5 +398,15 @@
         </div>
     </div>
     </div>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script>
+
+    </script>
+
 @endsection
 
